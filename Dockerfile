@@ -1,4 +1,7 @@
 FROM python:3.8.16-slim-buster
+
+ENV PYTHONUNBUFFERED=1
+
 WORKDIR /app
 COPY ./src ./
 
